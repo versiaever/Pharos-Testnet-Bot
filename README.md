@@ -63,7 +63,7 @@ A one-stop automation suite for the **Pharos Testnet** ecosystem. Run everything
 1. **Clone this Repo**
 ```bash
 git clone https://github.com/versiaever/Pharos-Testnet-Bot.git
-cd Pharos-Automation-Bot
+cd Pharos-Testnet-Bot
 ```
 
 2. **Install Dependencies**
