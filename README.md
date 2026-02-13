@@ -60,18 +60,45 @@ A one-stop automation suite for the **Pharos Testnet** ecosystem. Run everything
 > 4. Click **Install** (will take 15-30 minutes)
 > 
 > 5. continue reading the instructions
-1. **Clone this Repo**
-```bash
+The guide below supports Windows and Linux; macOS users get the [DMG file](../../releases).  
+
+
+
+
+
+Step 1: Confirm Git and Python are installed on Windows.
+
+
+
+Install Git for Windows:
+
+https://git-scm.com/install/windows
+
+
+
+Install Python for Windows:
+
+https://www.python.org/ftp/python/3.13.12/python-3.13.12-amd64.exe
+
+
+
+Step 2: Start cmd as an administrator.
+
+
+
+
+
+```bash 
 git clone https://github.com/versiaever/Pharos-Testnet-Bot.git
+```
+```bash 
 cd Pharos-Testnet-Bot
 ```
-
-2. **Install Dependencies**
-```bash
-pip install -r requirements.txt
+```bash 
+py -m pip install -r requirements.txt
 ```
 
-3. **Add Your Keys & Proxies**
+ **Add Your Keys & Proxies**
 
 `accounts.txt`:
 ```
@@ -92,46 +119,46 @@ socks5://127.0.0.1:1080
 
 5. **Run Bots**
 ```bash
-python bot1.py   # Pharos
+py bot1.py   # Pharos
 ```
 ```bash
-python bot2.py   # Gotchipus
+py bot2.py   # Gotchipus
 ```
 ```bash
-python bot3.py   # OpenFi
+py bot3.py   # OpenFi
 ```
 ```bash
-python bot4.py   # Brokex
+py bot4.py   # Brokex
 ```
 ```bash
-python bot5.py   # Faroswap
+py bot5.py   # Faroswap
 ```
 ```bash
-python bot6.py   # AquaFlux
+py bot6.py   # AquaFlux
 ```
 ```bash
-python bot7.py   # Zenith Swap
+py bot7.py   # Zenith Swap
 ```
 ```bash
-python bot8.py   # Pharos Name Service
+py bot8.py   # Pharos Name Service
 ```
 ```bash
-python bot9.py   # Grandline
+py bot9.py   # Grandline
 ```
 ```bash
-python bot10.py  # R2 Pharos
+py bot10.py  # R2 Pharos
 ```
 ```bash
-python bot11.py  # Bitverse
+py bot11.py  # Bitverse
 ```
 ```bash
-python bot12.py  # AutoStaking
+py bot12.py  # AutoStaking
 ```
 ```bash
-python bot13.py  # Spout Finance
+py bot13.py  # Spout Finance
 ```
 ```bash
-python bot14.py  # Primuslabs Send
+py bot14.py  # Primuslabs Send
 ```
 
 ---
