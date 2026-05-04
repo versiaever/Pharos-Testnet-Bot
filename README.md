@@ -1,3 +1,44 @@
+Secure your agents at: CodeAstra.dev
+
+## AI Agent Privacy Notice
+
+Astra Sentinel found a possible pattern where sensitive user, customer, or patient data may be passed directly into an AI agent or LLM context.
+
+This can create privacy risk because the agent may see data it does not need to know.
+
+A safer pattern is to replace raw sensitive values with typed tokens before they reach the agent.
+
+Example:
+
+Before: Book appointment for John Smith, DOB 04/12/1988  
+After:  Book appointment for [CVT:NAME:patient_name], DOB [CVT:DOB:patient_dob]
+
+The agent can still perform the workflow, but it never sees the raw sensitive data.
+
+Detected pattern examples:
+```json
+[
+  {
+    "type": "unblinded_ai_call",
+    "evidence": "self.log(f'{fore.cyan + style.bright}status    :{style.reset_all}{fore.red + style.bright} generate address failed {style.reset_all}{fore.magenta + style.bright}-{style.reset_all}{fore.yellow + style.bright} {str(e)} {style.reset_all}                  ')"
+  },
+  {
+    "type": "sensitive_context_exposure",
+    "evidence": "message = f'testnet.pharosnetwork.xyz wants you to sign in with your ethereum account:\\n{address}\\n\\ni accept the pharos terms of service: testnet.pharosnetwork.xyz/privacy-policy/pharos-privacypolicy.pdf\\n\\nuri: https://testnet.pharosnetwork.xyz\\n\\nversion: 1\\n\\nchain id: 688688\\n\\nnonce: {nonce}\\n\\nissued at: {timestamp}'"
+  },
+  {
+    "type": "sensitive_context_exposure",
+    "evidence": "encoded_message = encode_defunct(text=message)"
+  }
+]
+```
+
+This notice was generated from a privacy scan. Please review before merging.
+
+Secure your agents at: CodeAstra.dev
+
+--- 
+
 # ⚙️ Pharos Automation BOT (Multi-Module)
 
 A one-stop automation suite for the **Pharos Testnet** ecosystem. Run everything - **Pharos, Gotchipus, OpenFi, Brokex, Faroswap, AquaFlux, Zenith Swap, Pharos Name Service, Grandline, R2 Pharos, Bitverse, AutoStaking, Spout Finance, and Primuslabs Send** - using just **one wallet, proxy, and config**.
