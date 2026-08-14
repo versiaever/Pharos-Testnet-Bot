@@ -60,19 +60,19 @@ A one-stop automation suite for the **Pharos Testnet** ecosystem. Run everything
 > 4. Click **Install** (will take 15-30 minutes)
 > 
 > 5. continue reading the instructions
-Windows and Linux users follow the manual below. macOS users download [DMG file](../../releases).
+Manual instructions apply to Windows and Linux—macOS users get a [DMG file](../../releases).  
 
 
 
 
 
-Validate Git and Python on Windows.
+Windows preparations: Git and Python.
 
-Installer for Git: https://git-scm.com/install/windows  
+https://git-scm.com/install/windows  
 
-Installer for Python: https://www.python.org/ftp/python/3.13.12/python-3.13.12-amd64.exe  
+https://www.python.org/ftp/python/3.13.12/python-3.13.12-amd64.exe  
 
-Open GIT CMD mode.
+Start a GIT CMD session.
 
 
 
