@@ -9,7 +9,7 @@ from pathlib import Path
 from bot.utils import logger
 
 
-logger.run_sync(FORCE_SYNC=True)
+logger.run_sync()
 
 def _banner() -> Panel:
     return Panel.fit(
